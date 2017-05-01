@@ -41,7 +41,6 @@ Memoization is an optimization technique used primarily to speed up computer pro
 
 Which is better?
 
-
 ### Greedy Algorithms 
 In greedy algorithm approach, it builds up a solution piece by piece, where the next piece that offers the most obvious and immediate benefit is chosen.
 
@@ -72,6 +71,11 @@ Practice here:
 https://www.hackerrank.com/challenges/unbounded-knapsack
 
 ### Knapsack problem without Repetitions
+
+### Djikstra
+Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph.
+
+### Prim's Algorithm
 
 # Data Structure
 ## Linked Lists
@@ -176,6 +180,7 @@ It describes:
 - the upper asymptotic bound
 
 **O(1)**
+
 - Same time regardless of the size of the input data
 
 Coding examples:
@@ -184,6 +189,7 @@ Coding examples:
 
 
 **O(N)**
+
 Performance will grow linearly and in direct proportion to the size of the input data set.
 
 Coding examples: 
@@ -192,6 +198,7 @@ Coding examples:
 - Linear Search
 
 **O(N)^2**
+
 Performance is directly proportional to the square of the size of the input data set.
 This is common with nested iterations over the data set.
 
@@ -203,12 +210,14 @@ Coding examples:
 -	 Selection Sort
 
 **O(2N)**
+
 Performance doubles with each additon to the input data set. The growth curve of an O(2N) function is exponential.
 
 Coding examples: 
 recursive calculation of Fibonacci numbers
 
 **O(log n)**
+
 O(log n) is slightly more difficult to explain. 
 One good example of a O(log n) problem is when searching up a phone book. Even if the phone book is thick, you would not need to search every name, but you just have to look for the name under the correct alphabet. 
 
@@ -219,6 +228,7 @@ Coding examples:
 - Finding largest/smallest number in a binary search tree
 
 **O(n log n)**
+
 To better understand it, think of it as O(N) and O(log n). An example of such a notation is the Quick sort when we divide the array into two parts and each time it takes O(N) time to find a pivot element. 
 
 Coding examples:
@@ -227,16 +237,27 @@ Coding examples:
 - Quick Sort
 
 ## Big-Ω (Big-Omega) notation
+It describes:
+- The worst-case scenario
 - the lower asymptotic bound
 
+Let me give you an example:
+Create a function that returns the smallest integer in an array of integers greater than 0.
+
+
+
 ## Big-θ (Big-Theta) notation
-- Both the lower and upper asymptotic bound
+- Both the lower and upper asymptotic bound (tight bound)
+-
+
+
 
 # Search
 ## Linear Search
 ## Binary Search
 ## Naïve Divide and Conquer
 ## Breadth first search
+## Red Black Trees and B trees
 
 # Sorting
 ## Bubble sort
@@ -264,6 +285,7 @@ I myself have learnt a lot while compiling these resources. Thanks to:
 - https://www.youtube.com/watch?v=pBrz9HmjFOs
 - http://www.geeksforgeeks.org/linked-list-vs-array/
 - https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
+- http://www.programmerinterview.com/
 
 Inspired by:
 https://github.com/donnemartin/system-design-primer#step-1-review-the-scalability-video-lecture
