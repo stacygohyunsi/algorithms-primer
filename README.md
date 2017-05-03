@@ -415,7 +415,7 @@ Quiz for sorting: http://quiz.geeksforgeeks.org/quiz-quicksort/
 # Graph Representation
 # Travelling Salesman Problem
 
-#Credits
+# Credits
 I myself have learnt a lot while compiling these resources. Thanks to:
 - [Hackerrank](https://www.hackerrank.com) 
 - https://www.cs.cmu.edu/~avrim/451f09/lectures/lect1001.pdf
@@ -439,7 +439,7 @@ https://github.com/donnemartin/system-design-primer#step-1-review-the-scalabilit
 I would really like to learn from you, so contact me for any issues or questions or ideas.
 My github page is [here](https://github.com/stacygohyunsi) and my email is hello@imstacy.com
 
-#License
+# License
 ```
 Creative Commons Attribution 4.0 International License (CC BY 4.0)
 
