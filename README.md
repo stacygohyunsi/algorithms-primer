@@ -17,10 +17,10 @@ If you are arent sure of how to create a pull request, view the [pull request do
 
 # Algorithms Topics
 Summaries of the algorithms topics:
-[P versus NP](#p-versus-np)
-[Brute force method](#brute-force-method)
-[Divide and conquer algorithm](#divide-and-conquer-algorithm)
-[Dynamic Programming](#dynamic-programming)
+- [P versus NP](#p-versus-np)
+- [Brute force method](#brute-force-method)
+- [Divide and conquer algorithm](#divide-and-conquer-algorithm)
+- [Dynamic Programming](#dynamic-programming)
 
 ## P versus NP
 **What is P vs NP?**
