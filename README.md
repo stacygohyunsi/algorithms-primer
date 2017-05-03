@@ -27,6 +27,9 @@ Read more here: https://danielmiessler.com/study/pvsnp/#gs.null
 ### Brute force method
 Brute force is simplest way to explore the space of solutions - simply means to go through all solutions, however unlikely they may be, something which is not particularly elegant.
 
+### Divide and conquer
+Breaking down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly
+
 ## Dynamic Programming (DP)
 **What is DP?**
 DP or dynamic optimization basically means to take our problem and somehow break it down into a reasonable number of subproblems so that we can use optimal solutions to the smaller subproblems to give us optimal solutions to the larger ones.
@@ -122,12 +125,10 @@ Implementation of a stack/queue
 ### Single Linked List 
 Item navigation is forward only
 
-//insert single linked list diagrams
-
 ### Doubly Linked List
 Items can be navigated forward and backward
 
-//insert double linked list diagrams
+![alt text](.images/doubly_linked_list.jpg "doubly linked list")
 
 ### Circular Linked List 
 In a circular singly linked list, the last node of the list is made to point to the first node.
@@ -136,11 +137,12 @@ In a circular singly linked list, the last node of the list is made to point to 
 Insertion − Add a new data item in the given collection of data items.
 
 Deletion − Delete an existing data item from the given collection of data items.
-Traversal − Access each data item exactly once so that it can be processed.
-Searching − Find out the location of the data item if it exists in the given collection of data items.
-Sorting − Arranging the data items in some order i.e. in ascending or descending order in case of numerical data and in dictionary order in case of alphanumeric data.
 
-Read more here: 
+Traversal − Access each data item exactly once so that it can be processed.
+
+Searching − Find out the location of the data item if it exists in the given collection of data items.
+
+Sorting − Arranging the data items in some order i.e. in ascending or descending order in case of numerical data and in dictionary order in case of alphanumeric data.
 
 **Common interview questions**:
 
@@ -154,19 +156,16 @@ Read more here:
 **Practice here**: 
 https://www.hackerrank.com/domains/data-structures/linked-lists
 
-
 ### Queues
-
-[insert image here: http://www.stoimen.com/blog/wp-content/uploads/2012/06/2.-Queue-Operations.png]
-source: http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/ 
+![alt text](./images/queue.png "Implementation of a queue")
+source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/).
 
 Queues is a data structure which follows a First-In-First-Out (FIFO) or Last-In-Last-Out (LILO) methodology. 
 One end is always used to insert data (enqueue) and the other is used to remove data (dequeue).
 
 ### Stacks
-
-[insert image here: http://www.stoimen.com/blog/wp-content/uploads/2012/06/1.-Stack-Operations.png]
-source: http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/
+![alt text](./images/stack.png "Implementation of a stack")
+source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/).
 
 Stacks is a data structure which follows a LIFO (last in, first out) methodology.	
 
@@ -187,7 +186,7 @@ It describes:
 
 **O(1)**
 
-- Same time regardless of the size of the input data
+Same time regardless of the size of the input data
 
 Coding examples:
 - Accessing Array Index (int a = array[0];)
@@ -220,7 +219,7 @@ Coding examples:
 Performance doubles with each additon to the input data set. The growth curve of an O(2N) function is exponential.
 
 Coding examples: 
-recursive calculation of Fibonacci numbers
+- Recursive calculation of Fibonacci numbers
 
 **O(log n)**
 
@@ -267,6 +266,8 @@ http://www.programmerinterview.com/index.php/data-structures/big-o-versus-big-om
 - Worst-case performance‎: ‎O(log n)
 - Best-case performance‎: ‎O(1)
 
+**How does it work?**
+
 Assume we have an array of numbers which are arranged in sequence where we want to find out if the number, 17 is within the array. 
 [2, 3, 5, 7, 11, 13, 17, 19, 23]
 
@@ -281,9 +282,12 @@ However, based on binary search,
 
 4. **Make another guess based on the new minIndex/maxIndex** - Taking the average, our second guess would be at index (8+5)/2 = 6.5 ~ 6, with a value of 17. We have found our integer. 
 
-In conclusion: 
-Linear search - 7 searches
-Binary search - 2 searches
+**In conclusion:**
+
+| Search        |            	|
+| ------------- |:-----------:|
+| Linear 				| 7 					|
+| Binary 				| 2      			|
 
 **Practice here:** 
 https://www.hackerrank.com/challenges/binary-search-tree-insertion
@@ -327,6 +331,8 @@ Read more about how it works: https://www.tutorialspoint.com/data_structures_alg
 ## Quick sort
 A sorting algorithm which uses divide-and-conquer. 
 
+**How it works?**
+
 1. **Pick a pivot** - Given an unsorted list of numbers, pick an element in the list as a pivot
 
 2. **Partitioning** - Rearrange the elements so that all other elements in the list that are less than or equal to the pivot are to its left and all elements in the list are to the pivot's right
@@ -343,7 +349,11 @@ Practice here:
 
 ## Merge sort
 
+**How it works?**
 
+1. Continuously split the whole list into equal halves until atomic values are achieved and it can no longer be divided. If the list is empty or has one item, it is sorted by definition (the base case).
+
+2. Merge the smaller lists into a new list in sorted order
 
 - Best-case performance‎: ‎O(n log n)
 - Worst-case performance‎: ‎O(n log n)
