@@ -21,12 +21,46 @@ Summaries of the algorithms topics:
 - [Brute force method](#brute-force-method)
 - [Divide and conquer algorithm](#divide-and-conquer-algorithm)
 - [Dynamic Programming](#dynamic-programming)
+	- [Memoization](#memoization)
+	-	[Greedy Algorithms](#greedy-algorithms)
+- [Knapsack problem](#knapsack-problem)
+- [Djikstra](#djikstra)
+- [Prim's Algorithm](#prim's-algorithm)
+- [Data Structure](#data-structure)
+	- [Linked Lists](#linked-lists)
+	- [Arrays vs linked lists](#arrays-vs-linked-lists)
+	- [Single Linked List](#single-linked-list)
+	- [Doubly Linked List](#doubly-linked-list)
+	- [Circular Linked List](#circular-linked-list)
+	- [Operations on a Linked List](#operations-on-a-linked-list)
+- [Queues](#queues)
+- [Stacks](#stacks)
+- [Asymptotic Notation](#asymptotic-notation)
+	- [Big-O Notation](#big-o-notation)
+	- [Big-Ω (Big-Omega) notation](#big-Ω-(big-omega)-notation)
+	- [Big-θ (Big-Theta) notation](#big-θ-(big-theta)-notation)
+- [Search](#search)
+	- [Linear Search](#linear-search)
+	- [Binary Search](#linear-search)
+	- [Red Black Trees](#red-black-trees)
+- [Sorting](#sorting)
+	- [Bubble sort](#bubble-sort)
+	- [Selection sort](#selection-sort)
+	- [Insertion sort](#insertion-sort)
+	- [Merge sort](#merge-sort)
+
+# Search
+## Linear Search/Sequential Search
+
 
 ## P versus NP
 **What is P vs NP?**
+
 P vs NP is a noctorious problem in algorithms and in Computer Science.
 
-**P** stands for **polynomial time** (Polynomial time means that the complexity of the algorithm is O(n^k), where n is the size of your data (e. g. number of elements in a list to be sorted), and k is a constant) and **NP** stands for **non-deterministic polynomial time**.
+**P** stands for **polynomial time** (Polynomial time means that the complexity of the algorithm is O(n^k), where n is the size of your data (e. g. number of elements in a list to be sorted), and k is a constant). 
+
+**NP** stands for **non-deterministic polynomial time**.
 
 **NP-complete** is a family of NP problems for which you know that if one of them had a polynomial solution then everyone of them has.
 
@@ -57,7 +91,7 @@ Examples:
 
 DP or dynamic programming basically means to take our problem and somehow break it down into a reasonable number of subproblems so that we can use optimal solutions to the smaller subproblems to give us optimal solutions to the larger ones.
 
-- Allows solve many different types of problems in time O(n)^2 or O(n)^3
+- Allows one to solve many different types of problems in time O(n)^2 or O(n)^3
 - Usually focused on Principle of Optimality, "An optimal solution to any instance of an optimization problem is composed of optimal solutions to its subinstances"
 
 **Read more:**
@@ -67,7 +101,13 @@ DP or dynamic programming basically means to take our problem and somehow break 
 **Practice here:**
 - https://www.hackerrank.com/domains/algorithms/dynamic-programming
 
-## Memoization
+**Common interview questions:**
+- 0/1 Knapsack Problem
+- Coin change - Given a set of coins and amount, Write an algo­rithm to find out how many ways we can make the change of the amount using the coins given.
+- Edit Distance - Given two strings and a set of operations Change (C), insert (I) and delete (D) , find minimum number of edits (operations) required to transform one string into another.
+- Longest Common Subsequence
+
+### Memoization
 Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. 
 
 **Read more here:**
@@ -86,33 +126,25 @@ Algorithms which use the greedy approach:
 - Knapsack Problem
 - Job Scheduling Problem 
 
-**Common interview questions:**
-- 0/1 Knapsack Problem
-- Coin change - Given a set of coins and amount, Write an algo­rithm to find out how many ways we can make the change of the amount using the coins given.
-- Edit Distance - Given two strings and a set of operations Change (C), insert (I) and delete (D) , find minimum number of edits (operations) required to transform one string into another.
-- Longest Common Subsequence
-
-### Knapsack problem with Repetitions
+## Knapsack problem
 Knapsack problem or the rucksack problem is part of dynamic programming and it is where given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. 
 
 **Read more here:**
-https://www.youtube.com/watch?v=8LusJS5-AGo (Introduction to Knapsack)
-http://cse.unl.edu/~goddard/Courses/CSCE310J/Lectures/Lecture8-DynamicProgramming.pdf
+- [Introduction to Knapsack](https://www.youtube.com/watch?v=8LusJS5-AGo)
+- [0-1 Knapsack problem](http://cse.unl.edu/~goddard/Courses/CSCE310J/Lectures/Lecture8-DynamicProgramming.pdf)
 
 **Practice here:**
 https://www.hackerrank.com/challenges/unbounded-knapsack
 
-### Knapsack problem without Repetitions
-
-### Djikstra
+## Djikstra
 Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph.
 
-### Prim's Algorithm
+## Prim's Algorithm
 
 # Data Structure
 ## Linked Lists
 
-Introduction to linked lists/ Vectors vs. Linked List: https://www.youtube.com/watch?v=pBrz9HmjFOs (13 minute video)
+[Introduction to linked lists/ Vectors vs. Linked List](https://www.youtube.com/watch?v=pBrz9HmjFOs) (13 minute video)
 
 - Link − Each link of a linked list can store a data called an element.
 
@@ -120,7 +152,7 @@ Introduction to linked lists/ Vectors vs. Linked List: https://www.youtube.com/w
 
 - LinkedList − A Linked List contains the connection link to the first link called First.
 
-[insert tutorial point image here]
+![alt text](./images/doubly_linked_list.jpg "Doubly linked list")
 
 - Linked List contains a link element called first.
 
@@ -130,7 +162,7 @@ Introduction to linked lists/ Vectors vs. Linked List: https://www.youtube.com/w
 
 - Last link carries a link as null to mark the end of the list.
 
-### Advantages/disadvantages of arrays vs linked lists
+### Arrays vs linked lists
 The linked lists have pointers to the next and the previous item unlike arrays.
 
 **Advs of Linked Lists**
@@ -143,30 +175,21 @@ The linked lists have pointers to the next and the previous item unlike arrays.
 - Extra memory space for a pointer is required with each element of the list.
 - Arrays have better cache locality that can make a pretty big difference in performance.
 
-### Applications of a linked list
-Implementation of a stack/queue
-
 ### Single Linked List 
 Item navigation is forward only
 
 ### Doubly Linked List
 Items can be navigated forward and backward
 
-![alt text](./images/doubly_linked_list.jpg "doubly linked list")
-
 ### Circular Linked List 
 In a circular singly linked list, the last node of the list is made to point to the first node.
 
 ### Operations on a Linked List
-Insertion − Add a new data item in the given collection of data items.
-
-Deletion − Delete an existing data item from the given collection of data items.
-
-Traversal − Access each data item exactly once so that it can be processed.
-
-Searching − Find out the location of the data item if it exists in the given collection of data items.
-
-Sorting − Arranging the data items in some order i.e. in ascending or descending order in case of numerical data and in dictionary order in case of alphanumeric data.
+- Insertion − Add a new data item in the given collection of data items
+- Deletion − Delete an existing data item from the given collection of data items
+- Traversal − Access each data item exactly once so that it can be processed
+- Searching − Find out the location of the data item if it exists in the given collection of data items
+- Sorting − Arranging the data items in some order i.e. in ascending or descending order in case of numerical data and in dictionary order in case of alphanumeric data
 
 **Common interview questions**:
 
@@ -178,9 +201,9 @@ Sorting − Arranging the data items in some order i.e. in ascending or descendi
 - Delete repeated elements from linked list
 
 **Practice here**: 
-https://www.hackerrank.com/domains/data-structures/linked-lists
+- https://www.hackerrank.com/domains/data-structures/linked-lists
 
-### Queues
+## Queues
 ![alt text](./images/queue.png "Implementation of a queue")
 
 source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/).
@@ -188,7 +211,7 @@ source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-sta
 Queues is a data structure which follows a First-In-First-Out (FIFO) or Last-In-Last-Out (LILO) methodology. 
 One end is always used to insert data (enqueue) and the other is used to remove data (dequeue).
 
-### Stacks
+## Stacks
 ![alt text](./images/stack.png "Implementation of a stack")
 
 source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/).
@@ -198,11 +221,10 @@ Stacks is a data structure which follows a LIFO (last in, first out) methodology
 To insert an item, it is called “Push”, to remove an item off is called “Pop”.
 
 ### Heaps
-
 ### Tree Traversal
 ### Deque
 
-# Asymptotic notation
+# Asymptotic Notation
 ## Big-O Notation 
 The Big O notation describes the complexity of an algorithm. 
 It describes:
@@ -281,8 +303,8 @@ http://www.programmerinterview.com/index.php/data-structures/big-o-versus-big-om
 
 
 # Search
-## Linear Search/Sequential Search
-- Used when a list of integers is not in any order
+## Linear Search
+- Linear Search/Sequential Search is used when a list of integers is not in any order
 - Examines the first element in the list and then examines each "sequential" element in the list until a match is found
 - Worst-case performance‎: ‎O(n)
 - Best-case performance‎: ‎O(1)
@@ -340,7 +362,8 @@ This sorting algorithm is where each item is compared to adjacent items and is e
 - Best-case performance‎: ‎O(N)^2
 - Worst-case performance‎: ‎O(N)^2
 
-Bubble sort in C : https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_program_in_c.htm
+Bubble sort in C : 
+- https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_program_in_c.htm
 
 ## Selection sort
 This sorting algorithm is where a list of numbers is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the list is unsorted. 
@@ -366,7 +389,7 @@ A sorting algorithm which uses divide-and-conquer.
 
 3. **Recursively sort** - Recursively sort the elements to the left of the pivot, which must be less than or equal to the pivot) and the elements to the right of the pivot, which must be greater than the pivot
 
-Practice here: 
+**Practice here:** 
 - https://www.hackerrank.com/challenges/quicksort1
 - https://www.hackerrank.com/challenges/quicksort2
 - https://www.hackerrank.com/challenges/quicksort3
