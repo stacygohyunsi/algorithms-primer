@@ -17,37 +17,61 @@ If you are arent sure of how to create a pull request, view the [pull request do
 
 # Algorithms Topics
 Summaries of the algorithms topics:
+[P versus NP](#p-versus-np)
+[Brute force method](#brute-force-method)
+[Divide and conquer algorithm](#divide-and-conquer-algorithm)
+[Dynamic Programming](#dynamic-programming)
 
-### P versus NP
-**P** stands for **polynomial time** and **NP** stands for **non-deterministic polynomial time**.
-P problems are easily solved by computers, and NP problems are not easily solvable, but if you present a potential solution it’s easy to verify whether it’s correct or not.
+## P versus NP
+**What is P vs NP?**
+P vs NP is a noctorious problem in algorithms and in Computer Science.
 
-Read more here: https://danielmiessler.com/study/pvsnp/#gs.null
+**P** stands for **polynomial time** (Polynomial time means that the complexity of the algorithm is O(n^k), where n is the size of your data (e. g. number of elements in a list to be sorted), and k is a constant) and **NP** stands for **non-deterministic polynomial time**.
 
-### Brute force method
-Brute force is simplest way to explore the space of solutions - simply means to go through all solutions, however unlikely they may be, something which is not particularly elegant.
+**NP-complete** is a family of NP problems for which you know that if one of them had a polynomial solution then everyone of them has.
 
-### Divide and conquer
-Breaking down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly
+Problems can be divided into P problems, which are easily **solved** by computers, and NP problems are not easily solvable, but if you present a potential solution it’s easy to **verify** whether it’s correct or not.
 
-## Dynamic Programming (DP)
+**Is P=NP and why do I need to care?**
+
+For the longest of time, people have been trying to prove that P=NP or otherwise. It is important that we pay attention to it because many NP problems are problems we want to solve, e.g. in circuit design or in other industrial design applications.
+
+If it were proven that P = NP and the proof provided a specific polynomial time algorithm for an NP-complete problem, then because of the existing reduction proofs, we could immediately produce polynomial time algorithms for all our other NP problems.
+
+**Read more here:**
+- [Regarding RSA cryptography](https://www.quora.com/What-is-an-intuitive-explanation-of-P-NP)
+- https://danielmiessler.com/study/pvsnp/#gs.null
+
+## Brute force method
+Brute force method (Generate & Test) is simplest way to explore the space of solutions - it simply means to go through all solutions, however unlikely they may be, something which is not particularly elegant.
+
+## Divide and conquer algorithm
+Divide and Conquer means to break down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly.
+
+Examples:
+- [Quick sort](#quick-sort)
+- [Merge sort](#merge-sort)
+
+## Dynamic Programming
 **What is DP?**
-DP or dynamic optimization basically means to take our problem and somehow break it down into a reasonable number of subproblems so that we can use optimal solutions to the smaller subproblems to give us optimal solutions to the larger ones.
+
+DP or dynamic programming basically means to take our problem and somehow break it down into a reasonable number of subproblems so that we can use optimal solutions to the smaller subproblems to give us optimal solutions to the larger ones.
 
 - Allows solve many different types of problems in time O(n)^2 or O(n)^3
 - Usually focused on Principle of Optimality, "An optimal solution to any instance of an optimization problem is composed of optimal solutions to its subinstances"
 
 **Read more:**
-Competitive Programming book by Steven and Felix Halim
-http://www.techiedelight.com/introduction-dynamic-programming/
+- [Competitive Programming book by Steven and Felix Halim](http://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp1.pdf)
+- [Introduction to Dynamic Programming](http://www.techiedelight.com/introduction-dynamic-programming/)
 
 **Practice here:**
-https://www.hackerrank.com/domains/algorithms/dynamic-programming
+- https://www.hackerrank.com/domains/algorithms/dynamic-programming
 
-### Memoization vs Tabulation
+## Memoization
 Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. 
 
-Which is better?
+**Read more here:**
+- http://www.geeksforgeeks.org/tabulation-vs-memoizatation/
 
 ### Greedy Algorithms 
 In greedy algorithm approach, it builds up a solution piece by piece, where the next piece that offers the most obvious and immediate benefit is chosen.
@@ -128,7 +152,7 @@ Item navigation is forward only
 ### Doubly Linked List
 Items can be navigated forward and backward
 
-![alt text](.images/doubly_linked_list.jpg "doubly linked list")
+![alt text](./images/doubly_linked_list.jpg "doubly linked list")
 
 ### Circular Linked List 
 In a circular singly linked list, the last node of the list is made to point to the first node.
@@ -158,6 +182,7 @@ https://www.hackerrank.com/domains/data-structures/linked-lists
 
 ### Queues
 ![alt text](./images/queue.png "Implementation of a queue")
+
 source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/).
 
 Queues is a data structure which follows a First-In-First-Out (FIFO) or Last-In-Last-Out (LILO) methodology. 
@@ -165,6 +190,7 @@ One end is always used to insert data (enqueue) and the other is used to remove 
 
 ### Stacks
 ![alt text](./images/stack.png "Implementation of a stack")
+
 source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/).
 
 Stacks is a data structure which follows a LIFO (last in, first out) methodology.	
@@ -328,6 +354,7 @@ Read more about how it works: https://www.tutorialspoint.com/data_structures_alg
 - Worst-case performance‎: ‎O(N)^2
 
 ## Insertion sort
+
 ## Quick sort
 A sorting algorithm which uses divide-and-conquer. 
 
@@ -379,7 +406,8 @@ I myself have learnt a lot while compiling these resources. Thanks to:
 - https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
 - https://danielmiessler.com
 - https://www.khanacademy.org
-- 	http://interactivepython.org/
+- http://interactivepython.org/
+- https://math.stackexchange.com
 
 Inspired by:
 https://github.com/donnemartin/system-design-primer#step-1-review-the-scalability-video-lecture
