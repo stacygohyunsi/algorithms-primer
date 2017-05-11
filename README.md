@@ -446,6 +446,9 @@ A sorting algorithm which uses divide-and-conquer.
 - Best-case performance‎: ‎O(n log n)
 - Worst-case performance‎: ‎O(n)^2
 
+**Read more here**
+- https://www.tutorialspoint.com/data_structures_algorithms/quick_sort_algorithm.htm
+
 **Practice here:** 
 - https://www.hackerrank.com/challenges/quicksort1
 - https://www.hackerrank.com/challenges/quicksort2
@@ -459,10 +462,21 @@ A sorting algorithm which uses divide-and-conquer.
 
 2. Merge the smaller lists into a new list in sorted order
 
+![1](./images/unsorted_array.jpg)
+
+![1](./images/merge_sort_divide_1.jpg)
+
+![1](./images/merge_sort_divide_2.jpg)
+
+![1](./images/merge_sort_divide_3.jpg)
+
+Source: [Tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+
 - Best-case performance‎: ‎O(n log n)
 - Worst-case performance‎: ‎O(n log n)
 
-Quiz for sorting: http://quiz.geeksforgeeks.org/quiz-quicksort/
+**Practice here**
+- [Quiz for sorting](http://quiz.geeksforgeeks.org/quiz-quicksort/)
 
 # Recursion
 TODO
