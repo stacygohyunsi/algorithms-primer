@@ -333,6 +333,10 @@ http://www.programmerinterview.com/index.php/data-structures/big-o-versus-big-om
 ## Big-θ (Big-Theta) notation
 - Both the lower and upper asymptotic bound (tight bound)
 
+**Common interview questions**
+
+- What are the expected runtimes of some common data structures? (e.g., Hash Table, Binary Search Tree, Array, etc)
+
 # Search
 ## Linear Search/Sequential Search
 - Linear Search/Sequential Search is used when a list of integers is not in any order
@@ -396,6 +400,9 @@ Its properties:
 - If a node is red, then both its children are black
 - Every simple path from a node to a descendant leaf contains the same number of black nodes
 
+**Courses**
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/lecture-10-red-black-trees-rotations-insertions-deletions/
+
 ## Naïve Divide and Conquer
 TODO
 ## Breadth first search
@@ -417,13 +424,13 @@ This sorting algorithm is where a list of numbers is divided into two parts, the
 1. **Select and swap** - Select the smallest element from the unsorted part and swapped with the leftmost element
 2. **Continue the process** - This process continues until eventually the whole list becomes sorted
 
-Read more about how it works: https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
-
 - Best-case performance‎: ‎O(N)^2
 - Worst-case performance‎: ‎O(N)^2
 
-## Insertion sort
-TODO
+**Read more here:**
+
+- https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
+
 
 ## Quick sort
 A sorting algorithm which uses divide-and-conquer. 
@@ -436,13 +443,13 @@ A sorting algorithm which uses divide-and-conquer.
 
 3. **Recursively sort** - Recursively sort the elements to the left of the pivot, which must be less than or equal to the pivot) and the elements to the right of the pivot, which must be greater than the pivot
 
+- Best-case performance‎: ‎O(n log n)
+- Worst-case performance‎: ‎O(n)^2
+
 **Practice here:** 
 - https://www.hackerrank.com/challenges/quicksort1
 - https://www.hackerrank.com/challenges/quicksort2
 - https://www.hackerrank.com/challenges/quicksort3
-
-- Best-case performance‎: ‎O(n log n)
-- Worst-case performance‎: ‎O(n)^2
 
 ## Merge sort
 
@@ -458,9 +465,11 @@ A sorting algorithm which uses divide-and-conquer.
 Quiz for sorting: http://quiz.geeksforgeeks.org/quiz-quicksort/
 
 # Recursion
-## Towers of Hanoi
+TODO
 # Graph Representation
+TODO
 # Travelling Salesman Problem
+TODO
 
 # Credits
 I myself have learnt a lot while compiling these resources. Thanks to:
