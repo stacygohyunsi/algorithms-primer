@@ -71,6 +71,7 @@ If it were proven that P = NP and the proof provided a specific polynomial time 
 **Read more here:**
 - [Regarding RSA cryptography](https://www.quora.com/What-is-an-intuitive-explanation-of-P-NP)
 - https://danielmiessler.com/study/pvsnp/#gs.null
+- http://news.mit.edu/2009/explainer-pnp
 
 ## Brute force method
 Brute force method (Generate & Test) is simplest way to explore the space of solutions - it simply means to go through all solutions, however unlikely they may be, something which is not particularly elegant.
@@ -93,6 +94,11 @@ DP or dynamic programming basically means to take our problem and somehow break 
 **Read more:**
 - [Competitive Programming book by Steven and Felix Halim](http://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp1.pdf)
 - [Introduction to Dynamic Programming](http://www.techiedelight.com/introduction-dynamic-programming/)
+- [Dynamic Programming – From Novice to Advanced](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)
+- https://people.eecs.berkeley.edu/~vazirani/algorithms/chap6.pdf
+
+**Courses**
+- [MIT (Introduction to Algorithms (chapter 15))](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/lecture-15-dynamic-programming-longest-common-subsequence/)
 
 **Practice here:**
 - https://www.hackerrank.com/domains/algorithms/dynamic-programming
@@ -130,7 +136,8 @@ Knapsack problem or the rucksack problem is part of dynamic programming and it i
 - [0-1 Knapsack problem](http://cse.unl.edu/~goddard/Courses/CSCE310J/Lectures/Lecture8-DynamicProgramming.pdf)
 
 **Practice here:**
-https://www.hackerrank.com/challenges/unbounded-knapsack
+- https://www.hackerrank.com/challenges/unbounded-knapsack
+- http://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0
 
 ## Djikstra
 TODO
@@ -199,6 +206,7 @@ In a circular singly linked list, the last node of the list is made to point to 
 
 **Practice here**: 
 - https://www.hackerrank.com/domains/data-structures/linked-lists
+- http://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/
 
 ## Queues
 ![alt text](./images/queue.png "Implementation of a queue")
@@ -208,6 +216,14 @@ source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-sta
 Queues is a data structure which follows a First-In-First-Out (FIFO) or Last-In-Last-Out (LILO) methodology. 
 One end is always used to insert data (enqueue) and the other is used to remove data (dequeue).
 
+### Applications of a queue
+- Pipes
+- File IO
+
+**Practice here**: 
+
+- https://www.hackerrank.com/domains/data-structures/queues
+
 ## Stacks
 ![alt text](./images/stack.png "Implementation of a stack")
 
@@ -216,6 +232,22 @@ source: [Stoimen](http://www.stoimen.com/blog/2012/06/05/computer-algorithms-sta
 Stacks is a data structure which follows a LIFO (last in, first out) methodology.	
 
 To insert an item, it is called “Push”, to remove an item off is called “Pop”.
+
+### Applications of a stack
+- Infix to Postfix Conversion using Stack
+- Evaluation of Postfix Expression
+- Reverse a String using Stack
+- Implement two stacks in an array
+- Check for balanced parentheses in an expression
+
+**Practice here**: 
+
+- https://www.hackerrank.com/domains/data-structures/stacks
+
+**Common interview questions for queues and stacks:**
+
+- Which Data Structure Should be used for implementiong LRU cache? (Ans: Queue which is implemented using a doubly linked list)
+- Queue Implemented with Two Stacks
 
 ### Heaps
 TODO
@@ -308,6 +340,10 @@ http://www.programmerinterview.com/index.php/data-structures/big-o-versus-big-om
 - Worst-case performance‎: ‎O(n)
 - Best-case performance‎: ‎O(1)
 
+**Read more here**
+
+- https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm
+
 ## Binary Search
 - Used when in a sorted sequence
 - Worst-case performance‎: ‎O(log n)
@@ -316,7 +352,10 @@ http://www.programmerinterview.com/index.php/data-structures/big-o-versus-big-om
 **How does it work?**
 
 Assume we have an array of numbers which are arranged in sequence where we want to find out if the number, 17 is within the array. 
+
+```
 [2, 3, 5, 7, 11, 13, 17, 19, 23]
+```
 
 Based on linear search, we have to start at index 0 and progressively go through each element in the array. That would take us 7 searches before we arrive at 17. 
 However, based on binary search, 
@@ -337,10 +376,16 @@ However, based on binary search,
 | Binary 				| 2      			|
 
 **Practice here:** 
-https://www.hackerrank.com/challenges/binary-search-tree-insertion
+- https://www.hackerrank.com/challenges/binary-search-tree-insertion
+
+**Read more here**
+- http://www.geeksforgeeks.org/binary-search/
 
 **Common interview questions:**
-- How to verify whether a binary tree is a binary search tree?
+- How to verify whether a binary tree is a binary search tree? ([Answer](http://www.ardendertat.com/2011/10/10/programming-interview-questions-7-binary-search-tree-check/))
+- Find Minimum Depth of a Binary Tree
+- Maximum Path Sum in a Binary Tree
+- Check if a given array can represent Preorder Traversal of Binary Search Tree
 
 ## Red Black Trees
 A red-black tree is a binary search tree.
