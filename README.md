@@ -49,10 +49,6 @@ Summaries of the algorithms topics:
 	- [Insertion sort](#insertion-sort)
 	- [Merge sort](#merge-sort)
 
-# Search
-## Linear Search/Sequential Search
-
-
 ## P versus NP
 **What is P vs NP?**
 
@@ -137,9 +133,10 @@ Knapsack problem or the rucksack problem is part of dynamic programming and it i
 https://www.hackerrank.com/challenges/unbounded-knapsack
 
 ## Djikstra
-Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph.
+TODO
 
 ## Prim's Algorithm
+TODO
 
 # Data Structure
 ## Linked Lists
@@ -221,8 +218,11 @@ Stacks is a data structure which follows a LIFO (last in, first out) methodology
 To insert an item, it is called “Push”, to remove an item off is called “Pop”.
 
 ### Heaps
+TODO
 ### Tree Traversal
+TODO
 ### Deque
+TODO
 
 # Asymptotic Notation
 ## Big-O Notation 
@@ -301,9 +301,8 @@ http://www.programmerinterview.com/index.php/data-structures/big-o-versus-big-om
 ## Big-θ (Big-Theta) notation
 - Both the lower and upper asymptotic bound (tight bound)
 
-
 # Search
-## Linear Search
+## Linear Search/Sequential Search
 - Linear Search/Sequential Search is used when a list of integers is not in any order
 - Examines the first element in the list and then examines each "sequential" element in the list until a match is found
 - Worst-case performance‎: ‎O(n)
@@ -353,7 +352,9 @@ Its properties:
 - Every simple path from a node to a descendant leaf contains the same number of black nodes
 
 ## Naïve Divide and Conquer
+TODO
 ## Breadth first search
+TODO
 
 # Sorting
 ## Bubble sort
@@ -377,6 +378,7 @@ Read more about how it works: https://www.tutorialspoint.com/data_structures_alg
 - Worst-case performance‎: ‎O(N)^2
 
 ## Insertion sort
+TODO
 
 ## Quick sort
 A sorting algorithm which uses divide-and-conquer. 
