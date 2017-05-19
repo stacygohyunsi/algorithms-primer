@@ -323,7 +323,7 @@ Coding examples:
 
 ## Big-Ω (Big-Omega) notation
 It describes:
-- The worst-case scenario
+- The best-case scenario
 - the lower asymptotic bound
 
 An example of Big O vs Big Omega of a problem:
