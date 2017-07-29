@@ -52,7 +52,7 @@ Summaries of the algorithms topics:
 ## P versus NP
 **What is P vs NP?**
 
-P vs NP is a noctorious problem in algorithms and in Computer Science.
+P vs NP is a notorious problem in algorithms and in Computer Science.
 
 **P** stands for **polynomial time** (Polynomial time means that the complexity of the algorithm is O(n^k), where n is the size of your data (e. g. number of elements in a list to be sorted), and k is a constant). 
 
