@@ -406,7 +406,10 @@ Its properties:
 ## Naïve Divide and Conquer
 TODO
 ## Breadth first search
-TODO
+It is a search algorithm which checks for all nodes on a current level before moving on the next level. It is exhausting the **"breadth"** of possibilities at a level before moving on to another level.
+
+**Read more here**
+https://www.commonlounge.com/discussion/88d13209e68d4e4c94bbe9c44b2fc5bc
 
 # Sorting
 ## Bubble sort
