@@ -273,34 +273,6 @@ Coding examples:
 - print "hello";
 
 
-**O(N)**
-
-Performance will grow linearly and in direct proportion to the size of the input data set.
-
-Coding examples: 
-- Traversing an array
-- Traversing a linked list
-- Linear Search
-
-**O(N)^2**
-
-Performance is directly proportional to the square of the size of the input data set.
-This is common with nested iterations over the data set.
-
-These ones are supposed to be the less efficient algorithms if their O(n log n) counterparts are present.
-
-Coding examples: 
-- Bubble Sort
-- Insertion Sort
--	Selection Sort
-
-**O(2N)**
-
-Performance doubles with each additon to the input data set. The growth curve of an O(2N) function is exponential.
-
-Coding examples: 
-- Recursive calculation of Fibonacci numbers
-
 **O(log n)**
 
 O(log n) is slightly more difficult to explain. 
@@ -312,6 +284,17 @@ Coding examples:
 - Binary search
 - Finding largest/smallest number in a binary search tree
 
+
+**O(N)**
+
+Performance will grow linearly and in direct proportion to the size of the input data set.
+
+Coding examples: 
+- Traversing an array
+- Traversing a linked list
+- Linear Search
+
+
 **O(n log n)**
 
 To better understand it, think of it as O(N) and O(log n). An example of such a notation is the Quick sort when we divide the array into two parts and each time it takes O(N) time to find a pivot element. 
@@ -320,6 +303,28 @@ Coding examples:
 - Merge Sort
 - Heap Sort
 - Quick Sort
+
+
+**O(N^2)**
+
+Performance is directly proportional to the square of the size of the input data set.
+This is common with nested iterations over the data set.
+
+These ones are supposed to be the less efficient algorithms if their O(n log n) counterparts are present.
+
+Coding examples: 
+- Bubble Sort
+- Insertion Sort
+-	Selection Sort
+
+
+**O(2^N)**
+
+Performance doubles with each additon to the input data set. The growth curve of an O(2^N) function is exponential.
+
+Coding examples: 
+- Recursive calculation of Fibonacci numbers
+
 
 ## Big-Ω (Big-Omega) notation
 It describes:
