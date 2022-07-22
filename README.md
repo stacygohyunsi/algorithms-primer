@@ -501,6 +501,7 @@ I myself have learnt a lot while compiling these resources. Thanks to:
 - https://www.khanacademy.org
 - http://interactivepython.org/
 - https://math.stackexchange.com
+- https://www.scaler.com/topics/
 
 Inspired by:
 https://github.com/donnemartin/system-design-primer#step-1-review-the-scalability-video-lecture
